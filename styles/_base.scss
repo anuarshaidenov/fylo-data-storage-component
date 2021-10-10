@@ -58,7 +58,7 @@ body {
   @media only screen and (min-width: $media-mid) {
     flex-direction: row;
     justify-content: stretch;
-    align-items: stretch;
+    align-items: end;
     gap: 2rem;
   }
 }

@@ -14,6 +14,10 @@
   justify-items: start;
   align-items: start;
 
+  @media only screen and (min-width: $media-mid) {
+    padding-top: 4rem;
+  }
+
   &__logo {
     grid-column: 1 / -1;
   }
