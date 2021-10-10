@@ -10,8 +10,55 @@
 
 html {
   font-size: $font-base;
+
+  @media only screen and (min-width: $media-mid) {
+    font-size: $font-base-big;
+  }
 }
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+.attribution {
+  background-color: $color-dark-blue;
+  padding: 1rem 0;
+}
+
+.main {
+  background-color: $color-very-dark-blue;
+  background-image: url("../images/bg-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  @media only screen and (min-width: $media-mid) {
+    background-image: url("../images/bg-desktop.png");
+    background-position: 0 50vh;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: $media-mid) {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 2rem;
+  }
 }
