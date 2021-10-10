@@ -86,6 +86,7 @@ body {
 .fylo {
   background-color: #1d2c67;
   padding: 2rem;
+  padding-top: 4rem;
   padding-right: 8rem;
   border-radius: 10px;
   border-top-right-radius: 100px;
@@ -101,12 +102,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-}
-
-@media only screen and (min-width: 700px) {
-  .fylo {
-    padding-top: 4rem;
-  }
 }
 
 .fylo__logo {
